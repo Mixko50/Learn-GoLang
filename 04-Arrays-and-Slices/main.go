@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	fmt.Println("----- Basic arrays -----")
@@ -54,4 +57,8 @@ func main() {
 	fmt.Println(j)
 	fmt.Printf("Length: %v\n", len(j))
 	fmt.Printf("Capacity: %v\n", cap(j))
+
+	k := []int{12, 234, 756, 2, 5, 73, 4, 6, 456, 675}
+	sort.Ints(k)
+	fmt.Println(k)
 }
